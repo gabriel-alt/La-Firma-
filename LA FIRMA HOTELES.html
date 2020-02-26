@@ -1,0 +1,340 @@
+	<!doctype html>
+<html>
+<head lang="es">
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<script src="funciones.js"></script>
+	<title>LA FIRMA HOTELES</title>
+	<script type="text/javascript">
+function filtrar() { //v1.0
+	var msg = $('#ubc').val() + $('#precio').val();
+	if(msg != "rio medio"){
+		alert("No encontrado");
+	}
+	else{
+		$('.brisas').toggle();
+	}
+}
+    </script>
+</head>
+<body>
+	<div id="contenedor">	<!--contenedor principal--> 
+		<header>
+			<div class="contenedorface">
+				<a href="https://www.facebook.com/lafirmainmobiliaria/" target="_blank"> <!--enlace de fb-->
+		<img class="iconoface" src="img/face.png" alt="facebook"/>
+				</a>
+			</div>				
+			<div>	
+	<img id="imglaf" src="img/la firma logo agua.png" alt="LA FIRMA"/><!--logo png la firma -->
+			</div>
+	  </header>
+		<div class="pos-f-t"> <!--nav bar --> 
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+		<nav id = "firstmenu"> <!-- menu principal --> 
+		  <ul class="nav justify-content-center">
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA.HTML">INICIO</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA VENTA.html">VENTA</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA RENTA.html">RENTA</a>
+  </li>
+	<li class="nav-link">
+    <a class="text-white" href="LA FIRMA DESARROLLOS.html">DESARROLLOS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="CONOCENOS FIRMA.html">CONOCENOS</a>
+  </li>
+	<li class="nav-link">
+    <a class="text-white" href="CONTACTANOS.html">CONTACTANOS</a>
+  </li>		  
+</ul></nav>	
+		<nav id = "secondmenu"> <!-- menu secundario--> 	
+			<ul class="nav justify-content-center">  
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA LOCAL.html">LOCAL</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA HOTELES.html">HOTELES</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA EDIFICIOS.html">EDIFICIOS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA BODEGAS.html">BODEGAS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA OFICINAS.html">OFICINAS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA RANCHOS.html">RANCHOS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA OTROS SERVICIOS.html">OTROS SERVICIOS</a>
+  </li>
+</ul></nav> 
+      </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark"> <!-- boton desplegable de menu -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div><br><br>
+		<div class="container">
+		<div class="row justify-content-center"><!-- contenedor de buscador interno--> 
+			<input type="text" placeholder="UBICACIÓN" id="ubc" onkeyup="miFiltro()"><button type="button" id="clk" onClick="miFiltro()">BUSCAR</button><input type="text" placeholder="PRECIO" id="precio"></div></div>
+		<br><br>
+		
+	
+	
+			<div class="container"> <!--conteedor global de tarjetas -->
+	<ul id="myUl">
+        <li class="casa">
+  <div class="estilocaja riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel" data-slide-to="1"></li>
+           <li data-target="carusel" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa1.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casab2.jpg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">Río medio</h5>
+    <p class="card-text">Some quick example text.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">10
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">10
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">10
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+        </li>	
+			<li class="casa">	
+<div class="estilocaja2 riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel1" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel1" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel1" data-slide-to="1"></li>
+           <li data-target="carusel1" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa1.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casab2.jpg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel1" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">Río medio</h5>
+    <p class="card-text">Some quick example text.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">10
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">10
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">10
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+        </li>
+			<li class="casa">	
+<div class="estilocaja brisas"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel2" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel2" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel2" data-slide-to="1"></li>
+           <li data-target="carusel2" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa1.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casab2.jpg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel2" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">10
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">10
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">10
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+        </li>	
+			<li class="casa">	
+	<div class="estilocaja2 brisas"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel3" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel3" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel3" data-slide-to="1"></li>
+           <li data-target="carusel3" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa1.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casab2.jpg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel3" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel3" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">10
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">10
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">10
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+        </li></ul>		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+</div><!--fin de contenedor global de tarjetas-->
+
+		
+			<div class="flex">
+		    <footer id="estilo"><div><br><p class="fuentetxt" id="acomodar">Calle laguna de Chairel No.43<br>
+			Fracc. Geo Villa del Palmar<br>
+			Veracruz, Ver. Cp. 91725<br>
+			E-mail: laesalazarclemente2@gmail.com<br>
+			Tel: <strong>2 85 8142</strong></p></div>
+			
+			<span id="alinderecha"><p class="fuentetxt">Diseño y desarrollo Web: Gabriel Díaz Rosales</p></span><br><br>
+			
+			<span id="centrado"><p class="fuentetxt">Politca de privacidad y manejo de datos personales</p></span></footer></div>
+			
+		
+		
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <script src="filtrador.js"></script>
+	</div><!--fin de contenedor principal-->
+</body>
+</html>
+

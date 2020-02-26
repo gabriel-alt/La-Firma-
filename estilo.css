@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:black;}
+#contenedor{background:#90ee90; margin: 0px;} /* conetenedor principal */
+.contenedorface{width: 10%; height: 10%; margin-left: 90%; z-index: 1;} /* contenedor de icono de facebook */ 
+.iconoface{width:55px; height:40px; float: right;position: relative; top: 20px;right: 20px;}/* icono de facebook */
+#imglaf{ /*imagen logo la firma /cavecera)*/
+	margin-top:4%;margin-bottom: 4%;margin-left: 36%;width:30%; height:60%; z-index: 3;}
+#firstmenu{ background:black;}/*menu principal */
+#secondmenu{ background:black;}/* menu secundario */ 
+.flex{width: 100%; display: flex;} 
+.estilocaja{ width: 45%; height: 690px; background:white;border-radius:5px ; box-shadow: 8px 8px 15px -3px rgba(0,0,0,0.5); 
+    display: inline-block; margin-bottom: 25px; float: left; margin-right: 2.5%; margin-left: 2.5%;  } /*estilo de contenedor de tarjeta*/
+.estilocaja2{ width: 45%; height: 690px; background:white;border-radius:5px ; box-shadow: 8px 8px 15px -3px rgba(0,0,0,0.5); display: inline-block; margin-bottom: 25px; float: left; margin-left: 2.5%; margin-right: 2.5%} /*estilo de contenedor de tarjeta*/
+.icono img{width: 20px; height: 20px;}/* propiedades de dimenciones de iconos de tarjetas*/
+.escalaimg{width:100%; height: 400px;}/* propiedad de dimensión de imagenes en carrusel*/ 
+@media (max-width: 750px){.estilocaja {width: 100%;}}/*regla resposiva de contenedores de tarjetas */ 
+@media (max-width: 750px){.estilocaja2 {width: 100%;}}
+#estilo{background: black; width: 100%;}/* estilos y propiedades del footer*/
+#centrado{text-align:center;}/* centrado de texto de aviso de privacidad */
+.fuentetxt{ /*clase fuente de texto para el texto del footer */
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; color: white;}
+#acomodar{padding-left: 20px;}/*padding de la 
+dirección*/
+#alinderecha{float: right;margin-right: 20px;margin-left: 20px;}/* posicionamiento derecho de firma de autor */
+.flex{width: 100%; display: flex;}/* flex box del footer*/
+
+#myUl {list-style: none; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+   
+   
+
+
+

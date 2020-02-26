@@ -1,0 +1,961 @@
+	<!doctype html>
+<html>
+<head lang="es">
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<script src="funciones.js"></script>
+	<title>LA FIRMA VENTA</title>
+	<script type="text/javascript">
+/*function filtrar() { //v1.0
+	var msg = $('#ubc').val() + $('#precio').val();
+	if(msg == "rio medio"){
+		//$('.brisas').toggle();
+	}
+	else{
+		//alert ("No encontrado, tal vez quizo decir (rio medio)");
+	}
+}*/
+        function miFiltro(){
+            console.log("hola");
+             // Declare variables
+  var input, filtro, ul, li,   txtValue="";
+            var h;
+            
+  input = document.getElementById('ubc');
+  filtro = input.value.toUpperCase();
+  ul = document.getElementById("myUl");
+  li = ul.getElementsByClassName("casa");
+            h=ul.getElementsByTagName('h5');
+            
+            //console.log(li.length);
+  // Loop through all list items, and hide those who don't match the search query
+  for (var i = 0; i < li.length; i++) {
+     
+      console.log(i);
+    //h = li[i].getElementsByTagName("h5").innerHTML;
+     console.log(h.item(i).innerHTML);
+       
+     txtValue = h.item(i).innerHTML;
+      //txtValue=h.innerHTML;
+      
+    if (txtValue.toUpperCase().indexOf(filtro) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+        }
+    </script>
+</head>
+<body>
+	<div id="contenedor">	<!--contenedor principal--> 
+		<header>
+			<div class="contenedorface">
+				<a href="https://www.facebook.com/lafirmainmobiliaria/" target="_blank"> <!--enlace de fb-->
+		<img class="iconoface" src="img/face.png" alt="facebook"/>
+				</a>
+			</div>				
+			<div>	
+	<img id="imglaf" src="img/la firma logo agua.png" alt="LA FIRMA"/><!--logo png la firma -->
+			</div>
+	  </header>
+		<div class="pos-f-t"> <!--nav bar --> 
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+		<nav id = "firstmenu"> <!-- menu principal --> 
+		  <ul class="nav justify-content-center">
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA.HTML">INICIO</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA VENTA.html">VENTA</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA RENTA.html">RENTA</a>
+  </li>
+	<li class="nav-link">
+    <a class="text-white" href="LA FIRMA DESARROLLOS.html">DESARROLLOS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="CONOCENOS FIRMA.html">CONOCENOS</a>
+  </li>
+	<li class="nav-link">
+    <a class="text-white" href="CONTACTANOS.html">CONTACTANOS</a>
+  </li>		  
+</ul></nav>	
+		<nav id = "secondmenu"> <!-- menu secundario--> 	
+			<ul class="nav justify-content-center">  
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA LOCAL.html">LOCAL</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA HOTELES.html">HOTELES</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA EDIFICIOS.html">EDIFICIOS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA BODEGAS.html">BODEGAS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA OFICINAS.html">OFICINAS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA RANCHOS.html">RANCHOS</a>
+  </li>
+  <li class="nav-link">
+    <a class="text-white" href="LA FIRMA OTROS SERVICIOS.html">OTROS SERVICIOS</a>
+  </li>
+</ul></nav> 
+      </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark"> <!-- boton desplegable de menu -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div><br><br>
+		<div class="container">
+		<div class="row justify-content-center"><!-- contenedor de buscador interno--> 
+			<input type="text" placeholder="UBICACIÓN" id="ubc" onkeyup="miFiltro()"><button type="button" id="clk" onClick="miFiltro()">BUSCAR</button><input type="text" placeholder="PRECIO" id="precio"></div></div>
+		<br><br>
+		
+	
+	
+			<div class="container"> <!--conteedor global de tarjetas -->
+	<ul id="myUl">
+        <li class="casa">
+            
+  <div class="estilocaja riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel" data-slide-to="1"></li>
+           <li data-target="carusel" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/sala jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara casa jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara 2.2 jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara 2 jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/comedor jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/cocina jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/cochera jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+         <div class="carousel-item">
+           <img src="img/alcoba jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara3jobo.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title"> CASA FRACC. EL JOBO $1,300,000</h5>
+    <p class="card-text">En Veracruz, Ver. Dos niveles.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;3
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;3
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">&nbsp;6x15m
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+			</li>	
+        
+			<li class="casa">
+                
+<div class="estilocaja2 riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel1" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel1" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel1" data-slide-to="1"></li>
+           <li data-target="carusel1" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/sala parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara2 parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			 <div class="carousel-item">
+           <img src="img/recamara1 parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/escleras parroquia 490.jpeg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/pacillo parroquia 490.jpeg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/alcoba parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/patio parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/baño parroquia 490.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel1" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">CASA FRACC. HACIENDA LA PARROQUIA $490,000</h5>
+    <p class="card-text">En Veracruz, Ver. Dos niveles, cerca transporte y comercio.
+<br></p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;2
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;2
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">&nbsp;5X15
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+                
+		</li>	
+        
+		<li class="casa">	
+            
+<div class="estilocaja brisas"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel2" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel2" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel2" data-slide-to="1"></li>
+           <li data-target="carusel2" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/depto paztora.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/sala 2 depto paztora2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/comedor depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/depto sala paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/cocina depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/cocina 2 depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara closet depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara dpto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/baño depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/baño 2 depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/baño 3 depto paztora 2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara3 paztora2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel2" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">DEPTO PLAZA PASTORA CENTRICO $820,000</h5>
+    <p class="card-text">En Veracruz, Ver. Segundo nivel, atrás del IMSS de Diaz Mirón.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;3
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+		</li>		
+        
+		<li class="casa">	
+            
+	<div class="estilocaja2 brisas"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel3" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel3" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel3" data-slide-to="1"></li>
+           <li data-target="carusel3" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/lomas 4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/depto front lm4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/sala comedor lm 4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/entrada depto lm4  p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara lm4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/recamara 2  lm4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/baño lm4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+			<div class="carousel-item">
+           <img src="img/lavadero lm4 p alta.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel3" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel3" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">DEPTO. LOMAS DE RÍO MEDIO 4 $310,000</h5>
+    <p class="card-text">En Veracruz, Ver. Planta alta, lado sombra.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;2
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				<div class="estilocaja riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel4" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel4" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel4" data-slide-to="1"></li>
+           <li data-target="carusel4" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa geo p1 front.jpg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa geo p1 front 2.jpg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/patio geo p1 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/patio 2 geo p1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/sala geo p1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/comedor goe p1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/baño geo p1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel4" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel4" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">CASA GEO VILLAS LOS PINOS 1 $360,000</h5>
+    <p class="card-text">En Veracruz, Ver. Un nivel.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;1
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				<div class="estilocaja2 riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel5" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel5" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel5" data-slide-to="1"></li>
+           <li data-target="carusel5" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa geo v p 900.jpg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/alberca casa geo v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/sala comedor c geo v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			 <div class="carousel-item">
+           <img src="img/cocina casa geo v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			 <div class="carousel-item">
+           <img src="img/cocina2 c geo v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/recamara c geo v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/recamara2 c geo v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/closet rec2 c g v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/closet rec g v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/entrada g v pinos.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			
+        </div>
+     
+       <a class="carousel-control-prev" href="#carusel5" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel5" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">CASA GEO PINOS 1 $900,000</h5>
+    <p class="card-text">En Veracruz, Ver. Dos Niveles, cluster con alberca.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;3
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;2
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				 <div class="estilocaja riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel6" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel6" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel6" data-slide-to="1"></li>
+           <li data-target="carusel6" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa arboledas s 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa arboledas s 360 front.jpg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/comedor casa arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/cocina casa arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/casa rec arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/recamara 2 arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/baño casa arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/patio casa arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/back casa arboledas s r 360.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel6" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel6" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">CASA ARBOLEDAS SAN RAMÓN $360,000</h5>
+    <p class="card-text">En Veracruz, Ver. Un nivel, se acepta infonavit.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;1
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				<div class="estilocaja2 riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel7" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel7" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel7" data-slide-to="1"></li>
+           <li data-target="carusel7" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa front adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/sala casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/comedor casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/cocina 2 casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/cocina casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/recamara casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/recamara 2 casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/closet casa adolfo l m 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/baño casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/baño tasa casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/patio casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/patio2 casa adolfo lm 650.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel7" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel7" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">CASA FRACC. ADOLFO LÓPEZ MATEOS $650,000</h5>
+    <p class="card-text">Alvarado,Ver. Un nivel.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;2
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">&nbsp;7x16
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				<div class="estilocaja brisas"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel8" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel8" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel8" data-slide-to="1"></li>
+           <li data-target="carusel8" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/terreno bajadas rest 5.jpg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/terreno bajadas rest 3.jpg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/terreno bajadas rest 1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+		  <div class="carousel-item">
+           <img src="img/terreno bajadas rest 2.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+		 <div class="carousel-item">
+           <img src="img/terreno bajadas rest 4.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+		 <div class="carousel-item">
+           <img src="img/terreno bajadas rest 6.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel8" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel8" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">TERRENO LAS BAJADAS $2200m2</h5>
+    <p class="card-text">Veracruz, Ver. Con local comercial (restaurante).</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;0
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				<div class="estilocaja2 riomedio"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel9" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel9" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel9" data-slide-to="1"></li>
+           <li data-target="carusel9" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/finca 6 millones 10.jpg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/finca 6 millones 11.jpg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/finca 6 millones 1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+		 <div class="carousel-item">
+           <img src="img/finca 6 millones 9.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+		  <div class="carousel-item">
+           <img src="img/finca 6 millones 2.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 3.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 4.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 5.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 6.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 7.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 8.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 1.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 12.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+			<div class="carousel-item">
+           <img src="img/finca 6 millones 14.jpg" class="img-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel9" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel9" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">FINCA $6,000,000</h5>
+    <p class="card-text">Veracruz, La lima. Con casa de descanso, 8.6 hectárias. </p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">&nbsp;2
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">&nbsp;1
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">&nbsp;1
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+            
+				</li>
+        
+        <li class="casa">
+            
+				<div class="estilocaja brisas"> <!--contenedor de tarjeta-->
+ 	   <div id="carusel10" class="carousel slide" data-ride="carousel"><!-- carrrusel de muestra de propiedades -->
+         <ol class="carousel-indicators">
+           <li data-target="carusel10" data-slide-to="0" class="active"></li><!--lineas de desplazamiento del carrusel --> 
+           <li data-target="carusel10" data-slide-to="1"></li>
+           <li data-target="carusel10" data-slide-to="2"></li>
+         </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><!-- empieza sección de imagenes del carrucel -->
+           <img src="img/casa1.jpeg" class="img-fluid d-block w-100 escalaimg" alt="firstslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casa2.jpeg" class="img-fluid d-block w-100 escalaimg" alt="secondslide">
+          </div>
+          <div class="carousel-item">
+           <img src="img/casab2.jpg" class="img-fluid d-bimg-fluid d-block w-100 escalaimg" alt="thir">
+		  </div>
+        </div>
+      
+       <a class="carousel-control-prev" href="#carusel10" role="button" data-slide="prev"><!-- botones laterales del carrucel desplazamiento izquierda, derecha -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+       </a>
+       <a class="carousel-control-next" href="#carusel10" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+       </a>
+      </div><!--fin de seccion de carrusel-->
+  <div class="card-body"> <!-- sección de descripción de propiedad-->
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text.</p>
+	  <div class="icono">
+	<div class="row">
+		<div class="col">
+		<img src= "img/recamara.png" alt="recamara">10
+		</div>
+		<div class="col">
+		<img src= "img/baño.png" alt="baño">10
+		</div>
+		<div class="col">
+	    <img src= "img/car.png" alt="cochera">10
+		</div>
+		<div class="col">
+			<img src= "img/dimencion.png" alt="dimencion">10x10
+		</div>
+	  </div></div><br>
+    <a href="CONTACTANOS.html" class="btn btn-primary">INFORMES</a>
+  </div>
+</div><!--fin de contenedor de tarjeta-->
+				
+				
+				</li>
+				
+				
+				
+				
+				
+                </ul>	
+				
+				
+				
+</div><!--fin de contenedor global de tarjetas-->
+
+		
+			<div class="flex">
+		    <footer id="estilo"><div><br><p class="fuentetxt" id="acomodar">Calle laguna de Chairel No.43<br>
+			Fracc. Geo Villa del Palmar2<br>
+			Veracruz, Ver. Cp. 91223<br>
+			E-mail: laesalas2@gmail.com<br>
+			Tel: <strong>2 86 7192</strong></p></div>
+			
+			<span id="alinderecha"><p class="fuentetxt">Diseño y desarrollo Web: Gabriel Díaz Rosales</p></span><br><br>
+			
+			<span id="centrado"><p class="fuentetxt">Politca de privacidad y manejo de datos personales</p></span></footer></div>
+			
+		
+		
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</div><!--fin de contenedor principal-->
+</body>
+</html>
+

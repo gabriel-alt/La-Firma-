@@ -1,0 +1,162 @@
+<!doctype html>
+	<html>
+	<head lang="es">
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie-edge">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="estilo.css" rel="stylesheet" type="text/css">
+		<script src="funciones.js"></script>
+	<title>LA FIRMA CONTACTANOS</title>
+	</head>
+	<body>
+		<div id="contenedor">	<!-- cabecera de pagina--> 
+			<header>
+				<div class="contenedorface">
+					<a href="https://www.facebook.com/lafirmainmobiliaria/" target="_blank"> <!--enlace de fb-->
+			<img class="iconoface" src="img/face.png" alt="facebook">
+					</a>
+				</div>				
+				<div>	
+		<img id="imglaf" src="img/la firma logo agua.png" alt="LA FIRMA"/><!--logo png la firma -->
+				</div>
+		  </header>
+			<div class="pos-f-t"> <!--nav bar --> 
+	  <div class="collapse" id="navbarToggleExternalContent">
+		<div class="bg-dark p-4">
+			<nav id = "firstmenu"> <!-- menu principal --> 
+			  <ul class="nav justify-content-center">
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA.HTML">INICIO</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA VENTA.html">VENTA</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA RENTA.html">RENTA</a>
+	  </li>
+		<li class="nav-link">
+		<a class="text-white" href="LA FIRMA DESARROLLOS.html">DESARROLLOS</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="CONOCENOS FIRMA.html">CONOCENOS</a>
+	  </li>
+		<li class="nav-link">
+		<a class="text-white" href="CONTACTANOS.html">CONTACTANOS</a>
+	  </li>		  
+	</ul></nav>	
+			<nav id = "secondmenu" class="color"> <!-- menu secundario--> 	
+				<ul class="nav justify-content-center">  
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA LOCAL.html">LOCAL</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA HOTELES.html">HOTELES</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA EDIFICIOS.html">EDIFICIOS</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA BODEGAS.html">BODEGAS</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA OFICINAS.html">OFICINAS</a>
+	  </li>
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA RANCHOS.html">RANCHOS</a>
+	  </li>	
+	  <li class="nav-link">
+		<a class="text-white" href="LA FIRMA OTROS SERVICIOS.html">OTROS SERVICIOS</a>
+	  </li>
+	</ul></nav> 
+		  </div>
+	  </div>
+	  <nav class="navbar navbar-dark bg-dark"> <!-- boton desplegable de menu -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  </nav>
+	</div><br><br>
+
+			<div class="container"> <!--contenedor global de centrado-->
+
+		<form method="post" action="datos.php" class="needs-validation" id="formulario">
+
+	 <div class="form-row">
+		<div class="form-group col-md-6">
+		  <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" value="" required>
+			<div class="valid-feedback">¡Ok valido!</div>
+			<div class="invalid-feedback">Complete el campo</div>
+		</div>
+
+
+
+		<div class="form-group col-md-6">
+		  <input type="text" class="form-control" placeholder="Apellidos" id="apellido" name="apellido" value="" required>
+			<div class="valid-feedback">¡Ok valido!</div>
+			<div class="invalid-feedback">Complete el campo</div>
+		</div>
+
+
+
+		<div class="form-group col-md-6">
+		  <input type="email" class="form-control" id="inputEmail4" id="correo" placeholder="Correo" name="correo" value="" required>
+			<div class="valid-feedback">¡Ok valido!</div>
+			<div class="invalid-feedback">Complete el campo</div>
+		</div>
+
+
+		 <div class="form-group col-md-6">
+		  <input type="number" class="form-control" placeholder="Telefono" id="telefono" name="telefono" value="" required>
+			 <div class="valid-feedback">¡Ok valido!</div>
+			<div class="invalid-feedback">Complete el campo</div>
+		</div>
+
+		 <div class="form-group col-md-12">
+		<label for="exampleFormControlTextarea1">Escriba sus dudas y uno de nuestros asesores se pondra en contacto con usted a la brevedad.</label>
+		<textarea name="texto" class="form-control" id="exampleFormControlTextarea1" id="texto" rows="3" value="" required></textarea>
+	  </div>
+		 </div>
+	   <button type="submit" class="btn btn-primary"  id="enviar">Enviar</button>
+		</form>
+			</div><br>
+
+            <div class="flex">
+		    <footer id="estilo"><div><br><p class="fuentetxt" id="acomodar">Calle laguna de Chairel No.43<br>
+			Fracc. Geo Villa del Palmar<br>
+			Veracruz, Ver. Cp. 91725<br>
+			E-mail: laesalazarclemente2@gmail.com<br>
+			Tel: <strong>2 85 8142</strong></p></div>
+			
+			<span id="alinderecha"><p class="fuentetxt">Diseño y desarrollo Web: Gabriel Díaz Rosales</p></span><br><br>
+			
+			<span id="centrado"><p class="fuentetxt">Politca de privacidad y manejo de datos personales</p></span></footer></div>
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		</div>
+	</body>
+</html>
+
+	<?php
+
+	// Llamando a los campos
+	$nombre = $_POST['nombre'];
+	$apellido = $_POST['apellido'];
+	$correo = $_POST['correo'];
+	$telefono = $_POST['telefono'];
+	$texto = $_POST['texto'];	 
+
+	// Datos para el corrreo
+	$destinatario = "compaqwe@gmail.com";
+	$asunto = "Contacto de la pagina";
+
+	$mensaje = "De: $nombre.$apellido \n\r";
+	$mensaje .= "Correo: $correo \n\r";
+	$mensaje .= "Telefono: $telefono \n\r";
+	$mensaje .= "Mensaje: $texto";
+
+	// Enviando mensaje
+	mail($destinatario,$asunto,$mensaje);
+	?>
+
